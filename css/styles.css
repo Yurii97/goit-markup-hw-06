@@ -77,6 +77,40 @@ img {
   font-size: 0px;
   margin: 0;
 }
+.basic-button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  border-width: 0px;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: var(--prymary-transition);
+}
+.basic-button:hover,
+.basic-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--button-color-hover);
+}
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
 /* HEADER */
 /* header border */
 .page-header {
@@ -185,26 +219,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.hero-button {
-  background-color: var(--accent-color);
-  color: var(--button-text-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  border-radius: 4px;
-  letter-spacing: 0.06em;
-  border-width: 0px;
-  padding: 10px 32px;
-  cursor: pointer;
-  transition: var(--prymary-transition);
-}
-.hero-button:hover,
-.hero-button:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--button-color-hover);
-}
+
 /*MAIN */
 
 /* main  Наши ценности */
@@ -397,7 +412,8 @@ img {
 .footer-social {
   margin-left: 70px;
 }
-.footer-social p {
+.footer-social p,
+.footer-subscription label {
   padding-top: 12px;
   font-weight: bold;
   font-size: 14px;
@@ -428,6 +444,43 @@ img {
 .footer-social-icons a:focus {
   background-color: var(--accent-color);
   fill: var(--button-text-color);
+}
+.footer-subscription {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+.subscription-field {
+  display: flex;
+  margin-top: 20px;
+}
+.subscription-field input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding: 15px 16px;
+}
+.subscription-field input::placeholder {
+  padding: 15px 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscription-field button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+.subscription-field svg {
+  margin-left: 10px;
 }
 /* BACKDROP */
 .backdrop {
@@ -475,6 +528,11 @@ img {
   border-radius: 50%;
   background: var(--button-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: var(--prymary-transition);
+}
+.modal-button:hover,
+.modal-button:focus {
+  fill: var(--accent-color);
 }
 .modal-windons .title {
   font-weight: bold;
@@ -483,12 +541,75 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 12px;
 }
 .fidback {
   display: flex;
   flex-direction: column;
 }
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-field.last {
+  margin-bottom: 20px;
+}
+.form-field label {
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
 
+  /* color: #757575; */
+}
+.form-input {
+  width: 100%;
+  margin-top: 4px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: var(--prymary-transition);
+}
+.form-field textarea {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: var(--primary-tex-color);
+}
+.form-field textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+  cursor: pointer;
+  outline: none;
+}
+.form-policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-policy label {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+.form-policy a {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+.fidback button {
+  bottom: 40px;
+  margin: 0 auto;
+}
 /* PORTFOLIO */
 /* MAIN */
 /* section */

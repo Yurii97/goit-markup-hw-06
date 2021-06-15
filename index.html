@@ -61,7 +61,7 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
-        <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+        <button type="button" class="basic-button" data-modal-open>Заказать услугу</button>
       </section>
       <section class="section">
         <div class="container">
@@ -395,6 +395,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscription">
+          <label for="email">Подпишитесь на рассылку</label>
+          <div class="subscription-field">
+            <input
+              type="email"
+              name="mail"
+              id="email"
+              placeholder="E-mail"
+              class="subscription-input"
+            />
+            <button type="submit" class="basic-button" disabled>Подписаться
+              <svg width=24px height=24px>
+              <use href=./images/icons/sprite.svg#icon-send></use>
+            </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -406,17 +423,34 @@
         </button>
         <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="fidback">
-          <label for="name">Имя </label>
-          <input type="text" name="name" id="name" />
-          <label for="tel">Телефон </label>
-          <input type="tel" name="tel" id="tel" />
-          <label for="mail">Почта </label>
-          <input type="email" name="mail" id="mail" />
-          <label for="comment">Комментарий </label>
-          <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
-          <input type="checkbox" name="policy" id="policy" />
-          <label for="policy">Соглашаюсь с рассылкой и принимаю <a>Условия договора</a></label>
-          <button type="submit" disabled>Отправить</button>
+          <div class="form-field">
+            <label for="name">Имя </label>
+            <input type="text" name="name" id="name" class="form-input" />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон </label>
+            <input type="tel" name="tel" id="tel" class="form-input" />
+          </div>
+          <div class="form-field">
+            <label for="mail">Почта </label>
+            <input type="email" name="mail" id="mail" class="form-input" />
+          </div>
+          <div class="form-field last">
+            <label for="comment">Комментарий </label>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+              class="form-input"
+            ></textarea>
+          </div>
+          <div class="form-policy">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю<a href="#"> Условия договора</a></label
+            >
+          </div>
+          <button type="submit" class="basic-button" disabled>Отправить</button>
         </form>
       </div>
     </div>
