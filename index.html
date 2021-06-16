@@ -423,33 +423,34 @@
         </button>
         <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="fidback">
-          <div class="form-field">
-            <label for="name">Имя </label>
-            <input type="text" name="name" id="name" class="form-input" />
-          </div>
-          <div class="form-field">
-            <label for="tel">Телефон </label>
-            <input type="tel" name="tel" id="tel" class="form-input" />
-          </div>
-          <div class="form-field">
-            <label for="mail">Почта </label>
-            <input type="email" name="mail" id="mail" class="form-input" />
-          </div>
-          <div class="form-field last">
-            <label for="comment">Комментарий </label>
+          <label class="form-field">Имя
+            <input type="text" name="name" class="form-input" />
+            <svg width="18px" height="18px">
+            <use href="./images/icons/sprite.svg#icon-person-modal"></use>
+            </svg>
+          </label>                    
+          <label class="form-field">Телефон
+            <input type="tel" name="tel" class="form-input" />
+            <svg width="18px" height="18px">
+            <use href="./images/icons/sprite.svg#icon-phone-modal"></use>
+            </svg>
+          </label>      
+          <label class="form-field">Почта 
+            <input type="email" name="mail" class="form-input" />
+            <svg width="18px" height="18px">
+            <use href="./images/icons/sprite.svg#icon-email-modal"></use>
+            </svg>
+          </label>
+          <label class="form-field last">Комментарий
             <textarea
               name="comment"
-              id="comment"
               placeholder="Введите текст"
               class="form-input"
-            ></textarea>
-          </div>
-          <div class="form-policy">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy"
-              >Соглашаюсь с рассылкой и принимаю<a href="#"> Условия договора</a></label
-            >
-          </div>
+              autocomplete="of"
+              ></textarea>
+          </label>
+          <label class="form-policy"><input type="checkbox" name="policy" class="checkbox"/>
+            <span class="icon"></span>Соглашаюсь с рассылкой и принимаю<a href="#">Условия договора</a></label>
           <button type="submit" class="basic-button" disabled>Отправить</button>
         </form>
       </div>
