@@ -628,13 +628,17 @@ img {
   fill: transparent;
   transition: var(--prymary-transition);
 }
-.checkbox:focus + svg {
-  border: 3px solid black;
+.form-policy:focus,
+.form-policy:hover {
+  cursor: pointer;
 }
 .checkbox:checked + svg {
   fill: var(--button-text-color);
   border: transparent;
   background-color: var(--accent-color);
+}
+.checkbox:focus-visible + svg {
+  border: 3px solid black;
 }
 .form-policy a {
   display: inline-block;
