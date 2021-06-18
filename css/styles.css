@@ -552,14 +552,12 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-}
-.form-field.last {
-  margin-bottom: 20px;
-}
-.form-field label {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
+}
+.form-field.last {
+  margin-bottom: 20px;
 }
 .form-input {
   width: 100%;
@@ -620,8 +618,6 @@ img {
 }
 .form-policy svg {
   display: inline-block;
-  width: 16px;
-  height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   margin-right: 7px;
